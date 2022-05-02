@@ -1,11 +1,12 @@
 import cards from '../tpl/cards.hbs';
 import menu from '../menu.json';
 
-interface Themes {
-  [key: string]: string
+interface Themes{
+  [key:string]:string
 }
 
-const Theme : Themes= {
+
+const Theme:Themes = {
   LIGHT: 'light-theme',
   DARK: 'dark-theme',
 };
