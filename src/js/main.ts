@@ -1,14 +1,19 @@
 import cards from '../tpl/cards.hbs';
 import menu from '../menu.json';
 
-const Theme = {
+interface Themes{
+  [key:string]:string
+}
+
+
+const Theme:Themes = {
   LIGHT: 'light-theme',
   DARK: 'dark-theme',
 };
 
 const menuList = document.querySelector('.js-menu');
 const htmlMenu = cards(menu);
-const themeSwitch = document.querySelector('#theme-switch-toggle');
+const themeSwitch:HTMLInputElement = document.querySelector('#theme-switch-toggle');
 const body = document.querySelector('body');
 
 menuList.innerHTML = htmlMenu;
