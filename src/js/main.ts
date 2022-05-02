@@ -12,8 +12,8 @@ const Theme:Themes = {
 };
 
 const menuList = document.querySelector('.js-menu');
-const htmlMenu = cards(menu);
-const themeSwitch:HTMLInputElement = document.querySelector('#theme-switch-toggle');
+const htmlMenu: string = cards(menu);
+const themeSwitch: HTMLInputElement = document.querySelector('#theme-switch-toggle');
 const body = document.querySelector('body');
 
 menuList.innerHTML = htmlMenu;
